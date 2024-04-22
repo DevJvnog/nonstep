@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arena Patch</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="./script.js"></script>
+</head>
+<body>
+  <div class="navbar show-menu">
+    <div class="header-inner-content">
+        <nav>
+                <ul>
+    <li><a href="#academia">Academia</a></li>
+    <li><a href="#beach-tennis">Beach Tennis</a></li>
+    <li><a href="#clube-de-tiro">Clube de Tiro</a></li>
+    <li><a href="#sala-de-jogos">Sala de Jogos</a></li>
+    <li><a href="#jump-cama-elastica">Jump/Cama Elástica</a></li>
+    <li>
+        <a href="./areacliente/index.html" id="areaCliente">
+            <img src="./person-lines-fill.svg" alt="imagem area cliente">
+        </a>
+        <div id="recado">Área do Cliente <a href="./areacliente/index.html" id="areaCliente"></a></div>
+    </li>
+</ul>
+        </nav>
+        
+        <div class="nav-icon-container">
+         <img src="./images/menu.png" class="menu-button" alt="">
+        </div>
+
+    </div>
+</div>  
+
+  <div class="container">
+    <img class="imageContainer" src="./image2.png" alt="">
+    <ul class="firstList">
+      <li><img src="./circle.svg" alt="" onclick="changeImage(1)" class=""></li>
+      <li><img src="./circle.svg" alt="" onclick="changeImage(2)" class="selected"></li>
+      <li><img src="./circle.svg" alt="" onclick="changeImage(3)" class=""></li>
+      <li><img src="./circle.svg" alt="" onclick="changeImage(4)" class=""></li>
+      <li><img src="./circle.svg" alt="" onclick="changeImage(5)" class=""></li>
+    </ul>
+  </div>
+
+  <aside id="info">
+    <div>
+      <h1 id="infoHeading">Informações da Imagem 2</h1>
+    </div>
+    <p id="infoText">Informações sobre a segunda imagem.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, distinctio eos harum quam minus est? Consequuntur, itaque excepturi necessitatibus aliquid ipsa odio, ratione veritatis, perferendis quibusdam doloribus molestiae dicta dignissimos.</p>
+    <button>Reservar Agora!</button>
+  </aside>
+
+  <!-- Seções -->
+  <section id="academia">
+    <h2>Academia</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis pariatur tempore doloribus repellat voluptas provident quasi consequatur in. Quae harum eaque officiis commodi perferendis dolores voluptas maiores alias cum dolorum!.</p>
+  </section>
+
+  <hr>
+
+  <section id="beach-tennis">
+    <h2>Beach Tennis</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestias vero dolores ratione animi laudantium voluptatem labore nulla tenetur, aliquid obcaecati in, veniam architecto molestiae quos veritatis? Maxime, amet sint.</p>
+  </section>
+
+  <hr>
+
+  <section id="clube-de-tiro">
+    <h2>Clube de Tiro</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fuga voluptatum magni ipsam vero cupiditate, earum modi amet, maxime unde sapiente odit pariatur dolor quaerat eligendi maiores natus error iusto?</p>
+  </section>
+
+  <hr>
+
+  <section id="sala-de-jogos">
+    <h2>Sala de Jogos</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, architecto ducimus ipsum saepe repudiandae cumque facilis necessitatibus culpa ea ipsa dignissimos magnam optio totam maiores vitae ratione minima inventore iure.</p>
+  </section>
+
+  <hr>
+
+  <section id="jump-cama-elastica">
+    <h2>Jump/Cama Elástica</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita in sequi facere, non a tenetur recusandae earum qui soluta vitae consectetur eius dicta dolorem pariatur voluptatem odit, ab, alias dolor.</p>
+  </section>
+
+  <!-- Botões flutuantes -->
+  <a href="https://wa.me/seu-numero-de-telefone" class="float whatsapp" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <a href="https://www.instagram.com/seu-usuario" class="float instagram" target="_blank">
+     <i class="bi bi-instagram"></i>
+  </a>
+
+  <!-- Botão para fechar os botões flutuantes -->
+  <button id="closeButton" class="closeButton">X</button>
+</body>
+
+<script>
+   //Menu button
+ const navbar = document.querySelector(".navbar");
+ const menuButton = document.querySelector(".menu-button");
+
+ menuButton.addEventListener('click', () => {
+     navbar.classList.toggle("show-menu");
+ });
+
+</script>
+</html>

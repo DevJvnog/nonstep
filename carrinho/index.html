@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho Arena Patch</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <div id="content">
+        <div class="navbar show-menu">
+            <div class="header-inner-content">
+                <a href="../areacliente/index.html"><h1 class="logo">Arena <span>Patch</span></h1></a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="page-title">Seu Carrinho</div>
+    <div class="content">
+        <section>
+            <table>
+                <tbody id="carrinhoElement"></tbody>
+            </table>
+        </section>
+        <aside>
+            <div class="box">
+                <header>Resumo da compra</header>
+                <div class="info">
+                    <div><span>Sub-total</span><span></span></div>
+                </div>
+                <footer>
+                    <span>Total</span>
+                    <span></span>
+                </footer>
+            </div>
+            <button onclick="finalizarCompra()" class="finalizar-compra-button">Finalizar Compra</button>
+        </aside>
+    </div>
+</main>
+<script src="../scripts/scriptcarrinho.js"></script>
+
+<script>
+    // Função para finalizar a compra e gerar o código PIX
+    function finalizarCompra() {
+        let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+        let total = 0;
+
+        // Calcular o valor total da compra
+        carrinho.forEach(function (produto) {
+            total += produto.preco * produto.quantidade;
+        });
+
+        // Gerar o código PIX com a chave PIX de exemplo
+        let codigoPIX = `Chave PIX: 12327195608\nValor: R$ ${total.toFixed(2)}`;
+
+        // Exibir o código PIX para o usuário
+        alert(codigoPIX);
+    }
+</script>
+
+</body>
+</html>

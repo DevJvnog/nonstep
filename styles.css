@@ -1,0 +1,332 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+.header-inner-content {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  background-color: #505050;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  box-shadow: 10px 0 10px #2c2d2d;
+  z-index: 99;
+}
+
+.navbar>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon-container img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.nav-icon-container img:first-child {
+  margin-right: 1rem;
+}
+
+nav ul li {
+  color: #000;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+}
+nav ul li a{
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  align-items: center;
+}
+
+
+nav ul li:hover {
+  transform: translateY(-5px);
+  transition: all 0.2s;
+  font-weight: bold;
+}
+
+.menu-button {
+  display: none;
+} 
+
+  #areaCliente{
+      position: relative;
+     
+  }
+  #areaCliente img{
+    width: 60px;
+    height: 40px;
+  }
+
+  #recado {
+    display: none;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    background-color: #000000;
+    color: #ffffff;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    z-index: 999;
+}
+
+#recado::after {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #000000 transparent;
+}
+
+#areaCliente:hover + #recado {
+    display: block;
+}
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000; /* cor do texto padrão */
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Estilizando cada item do menu  */
+  li:nth-child(1) a {
+    background-color: #fff; /* cor de fundo branca */
+  }
+  
+  li:nth-child(2) a {
+    background-color: #ee338a; /* cor de fundo rosa */
+  }
+  
+  li:nth-child(3) a {
+    background-color: #56f356; /* cor de fundo verde meio tom */
+  }
+
+  li:nth-child(4) a {
+    background-color: #ffe600; /* cor de fundo amarela*/
+  }
+  
+  li:nth-child(5) a {
+    background-color: #029aff; /* cor de fundo azul claro */
+  }
+  
+  .firstList {
+    position: absolute;
+    top: 550px;
+    left: 160px;
+    text-align: center;
+  }
+
+
+.firstList img{
+  width: 25px;
+  cursor: pointer;
+}
+.firstList li img {
+  border-radius: 50%;
+}
+
+.firstList li img.selected {
+  background-color: #000000; /* cor de fundo preta */
+  transform: scale(1.5); /* escala transform de 1.5 */
+}
+
+/* Estilos CSS para cada círculo quando clicado */
+.firstList li:nth-child(1) img {
+  background-color: #fff; /* cor de fundo branca */
+}
+
+.firstList li:nth-child(2) img {
+  background-color: #ee338a; /* cor de fundo rosa */
+}
+
+.firstList li:nth-child(3) img {
+  background-color: #56f356; /* cor de fundo verde meio tom */
+}
+
+.firstList li:nth-child(4) img {
+  background-color: #ffe600; /* cor de fundo amarela*/
+}
+
+.firstList li:nth-child(5) img {
+  background-color: #029aff; /* cor de fundo azul claro */
+}
+
+  aside{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+  }
+
+  .imageContainer{
+    min-height: 598px;
+    border-radius: 0px 60px 0px 0px;
+  }
+
+
+/* Estilos para as seções */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Estilo para os títulos das seções */
+section h2 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o texto das seções */
+section p {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* Estilos para a linha horizontal */
+hr {
+    border: none;
+    border-top: 1px solid #505050;
+    margin: 1px auto;
+    width: 100%;
+}
+
+
+/* Estilos para os botões flutuantes */
+.float {
+    position: fixed;
+    bottom: 40px;
+    right: 1px;
+    opacity: 0.9;
+    z-index: 1000; /* para garantir que esteja sempre acima de outros elementos */
+}
+
+.float:hover {
+   transform: scale(1.3);
+   
+}
+
+.float img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    
+   
+}
+
+/* Estilos específicos para o botão do Instagram */
+.instagram {
+    bottom: 120px;
+    
+}
+
+a i.bi.bi-whatsapp{
+  cursor: pointer;
+  font-size: 40px; 
+  color: #24ce79; 
+  
+}
+a i.bi.bi-instagram{
+  cursor: pointer;
+  font-size: 40px; 
+  padding-left: 10px;
+  color: #f02849;;
+  
+
+}
+
+
+/* Estilos para o botão de fechar */
+.closeButton {
+  position: fixed;
+  bottom: 165px; /* Ajuste conforme necessário */
+  right: 50px; /* Ajuste conforme necessário */
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 1001; /* Garante que esteja acima dos botões flutuantes */
+}
+
+
+/* Adiciona estilo à classe .menu-button para garantir que a imagem seja visível em telas menores que 800px */
+.menu-button {
+  display: none; /* Oculta inicialmente o botão em telas maiores que 800px */
+}
+
+@media screen and (max-width: 800px) {
+  .menu-button {
+    display: block;
+}
+
+.header-bottom-side {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+nav {
+    position: absolute;
+    background-color: #2c2c2c;
+    width: 100%;
+    top: 46px;
+    display: none;
+}
+
+.show-menu nav {
+    display: block;
+}
+
+nav ul {
+    flex-direction: column;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 0.8rem;
+}
+
+
+}
